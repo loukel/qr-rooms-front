@@ -1,6 +1,7 @@
 import { Card } from "react-bootstrap"
 
 const Attendees = ({ data: attendees }) => {
+  console.log(attendees)
   return ( 
     <div>
       {attendees.map((attendee) => (

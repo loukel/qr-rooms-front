@@ -27,7 +27,7 @@ const Gathering = () => {
       socket.emit('gathering:create')
     }
     socket.on('gathering', data => {
-      setGathering({...data})
+      setGathering(data)
     })
   }, [])
 
@@ -45,7 +45,7 @@ const Gathering = () => {
       <div className='text-center p-3'>
         {!socialAdded && <SocialForm socialAddedQuery={() => setSocialAdded(true)}/>}
         <GatheringQR gatheringId={gatheringId}/>
-        {gathering?.attendees?.length && <Attendees data={gathering?.attendees} />}
+        {gathering?.attendees?.length && <Attendees data={gathering.attendees} />}
       </div>
     </div>
   )
