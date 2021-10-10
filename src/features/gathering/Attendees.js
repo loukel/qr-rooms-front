@@ -14,12 +14,12 @@ const Attendees = ({ data: attendees }) => {
             }
             {attendee.snapchat && 
               <div>
-                Snapchat: {attendee.snapchat}
+                Snapchat: <a href={`https://www.snapchat.com/add/${attendee.snapchat}`} target="_blank" rel="noreferrer">{attendee.snapchat}</a>
               </div>
             }
             {attendee.instagram && 
               <div>
-                Instagram: {attendee.instagram}
+                Instagram: <a href={`https://www.instagram.com/${attendee.instagram}`} target="_blank" rel="noreferrer">{attendee.instagram}</a>
               </div>
             }
           </Card.Body>
