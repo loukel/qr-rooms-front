@@ -1,8 +1,8 @@
 const Header = () => {
   return (
-    <header>
+    <header className='text-center m-0 p-0' style={{ fontSize: '0.9rem' }}>
       <i>
-        Created by Louis Kelly {' -> '}
+        created by <b>louis kelly</b> {' -> '}
         <a
           href='https://github.com/loukel'
           rel='noopener noreferrer'
@@ -11,6 +11,12 @@ const Header = () => {
           loukel (GitHub)
         </a>
       </i>
+      <div>
+        add the socials you want to share, not all needed
+      </div>
+      <div>
+        making it easier for new unconnected groups to connect
+      </div>
     </header>
   )
 }

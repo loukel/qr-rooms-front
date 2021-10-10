@@ -42,7 +42,7 @@ const Gathering = () => {
   return (
     <div className='container' style={{ maxWidth: '844px' }}>
       <Header />
-      <div className='text-center p-3'>
+      <div className='text-center'>
         {!socialAdded && <SocialForm socialAddedQuery={() => setSocialAdded(true)}/>}
         <GatheringQR gatheringId={gatheringId}/>
         <Attendees data={gathering.attendees} />
