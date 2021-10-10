@@ -40,12 +40,12 @@ const Gathering = () => {
   if (!gathering) return (<div>Loading</div>) 
 
   return (
-    <div className='container'>
+    <div className='container' style={{ maxWidth: '844px' }}>
       <Header />
       <div className='text-center p-3'>
         {!socialAdded && <SocialForm socialAddedQuery={() => setSocialAdded(true)}/>}
         <GatheringQR gatheringId={gatheringId}/>
-        {gathering?.attendees?.length && <Attendees data={gathering.attendees} />}
+        <Attendees data={gathering.attendees} />
       </div>
     </div>
   )

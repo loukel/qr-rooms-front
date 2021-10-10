@@ -1,11 +1,10 @@
 import { Card } from "react-bootstrap"
 
 const Attendees = ({ data: attendees }) => {
-  console.log(attendees)
   return ( 
     <div>
-      {attendees.map((attendee) => (
-        <Card>
+      {attendees && attendees.map((attendee) => (
+        <Card className='mb-3'>
           <Card.Body>
             {attendee.name && 
               <div>
