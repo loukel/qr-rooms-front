@@ -6,6 +6,7 @@ const GatheringQR = ({ gatheringId }) => {
   return (
     <div>
       <div>{gatheringURL}</div>
+      <div><a href={window.location.origin}>New Room?</a></div>
       <QRCode value={gatheringURL} className='mb-3'/>
     </div>
   )
