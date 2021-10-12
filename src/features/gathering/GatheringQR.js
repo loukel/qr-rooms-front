@@ -3,8 +3,11 @@ import QRCode from "react-qr-code";
 const GatheringQR = ({ gatheringId }) => {
   const gatheringURL = `${window.location.origin}/${gatheringId}`
 
-  return ( 
-    <QRCode value={gatheringURL} className='m-3'/>
+  return (
+    <div>
+      <div>{gatheringURL}</div>
+      <QRCode value={gatheringURL} className='mb-3'/>
+    </div>
   )
 }
 
