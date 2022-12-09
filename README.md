@@ -4,7 +4,7 @@
 
 Using React and Socket.io
 
-[**Demo**](https://confident-booth-024076.netlify.app/) - Since I'm using a free heroku deployment, the api may be asleep
+[**Demo**](https://confident-booth-024076.netlify.app/) currently not working at the moment due to not having the server deployed.
 
 # Getting Started with Create React App
 
