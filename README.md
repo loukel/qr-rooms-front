@@ -1,5 +1,7 @@
 # front-end repo for qr rooms
 
+QR rooms allows people in real life to easily share names and social medias, so that a whole a group can efficiently add each others. Utilises sockets and QR codes. A user sets up a room, shares the QR code and all people can join and add their social names. Then each user can view everyone in that room enabling them to connect with everyone in the group.
+
 [back-end repo here](https://github.com/loukel/qr-rooms-back)
 
 Using React and Socket.io
